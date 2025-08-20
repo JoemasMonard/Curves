@@ -1,0 +1,29 @@
+
+
+A031507
+
+gp > \r  f:s7.gp
+
+   n= 47550317 rank=7
+
+   rank= [7, 201749812.94]
+   
+
+{
+   n=47550317;
+
+   c = ellinit([0,n]);
+   a = ellanalyticrank(c);
+   r = a[1];
+
+   printsep(" ", n,r);
+   print(a);
+   print;
+
+}
+   
+\\ Authors credit
+
+
+
+

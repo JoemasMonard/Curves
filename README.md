@@ -1,2 +1,5 @@
 # Curves
-Elliptoc curves and more
+Elliptic curves and more.
+
+
+

@@ -1,0 +1,38 @@
+
+   [logfile is "f:D4.log"]
+   
+29274 4 [4, 8134.7855325804035449094756922983407166]
+46274 4 [4, 8686.9709499779294130358580712341482714]
+46754 4 [4, 8429.0674199340662117285945735341655593]
+57715 4 [4, 11723.931754777801427500381335158213463]
+
+
+\l "f:D4.log"
+
+{
+\\ rank 4: 29274,46274,46754,57715 (sequential search)
+
+   n = 29274;
+   c = ellinit([-n^2,0]);a = ellanalyticrank(c);r = a[1];
+   printsep(" ", n,r,a);
+
+   n = 46274;
+   c = ellinit([-n^2,0]);a = ellanalyticrank(c);r = a[1];
+   printsep(" ", n,r,a);
+
+   n = 46754;
+   c = ellinit([-n^2,0]);a = ellanalyticrank(c);r = a[1];
+   printsep(" ", n,r,a);
+
+   n = 57715;
+   c = ellinit([-n^2,0]);a = ellanalyticrank(c);r = a[1];
+   printsep(" ", n,r,a);
+
+
+}
+   
+\\ Authors credit:
+\\ Code from Charles R Greathouse IV, Sep 01 2011.
+
+
+

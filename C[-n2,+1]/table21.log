@@ -4,7 +4,7 @@ C[ -n^2,+1]
 ===========
 The form gives curves with moderate rank at low values of "n". 
 Some points always on curve, for any n. After some n, rank never less than 3.
-Always integral points.
+High number of Integral points.
 -----------------------------------------------------------------------------
 
 
@@ -439,6 +439,7 @@ PARIGP code
       P=ellratpoints(E,h);
       r=ellrank(eri,,P);
       ej= ceil(E.j);
+
 
 
 

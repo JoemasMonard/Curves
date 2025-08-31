@@ -1,0 +1,162 @@
+
+
+C[-n^2,0]  Form xyw: n^2= (x*w), y^2= (w-x)
+Points: [-x,x*y], [ w,w*y]
+
+XYW forms:
+xyw 6 : 2 4 18 -->P [-2, 8] & P [18, 72]
+xyw 6 : 3 3 12 -->P [-3, 9] & P [12, 36]
+6 rank= [1, 1, 0, [[-3, 9]]]
+
+XYW forms:
+xyw 15 : 9 4 25 -->P [-9, 36] & P [25, 100]
+15 rank= [1, 1, 0, [[-9, 36]]]
+
+XYW forms:
+xyw 20 : 16 3 25 -->P [-16, 48] & P [25, 75]
+20 rank= [1, 1, 0, [[-16, 48]]]
+
+XYW forms:
+xyw 21 : 3 12 147 -->P [-3, 36] & P [147, 1764]
+21 rank= [1, 1, 0, [[-3, 36]]]
+
+XYW forms:
+xyw 24 : 8 8 72 -->P [-8, 64] & P [72, 576]
+xyw 24 : 12 6 48 -->P [-12, 72] & P [48, 288]
+24 rank= [1, 1, 0, [[-12, 72]]]
+
+XYW forms:
+xyw 30 : 6 12 150 -->P [-6, 72] & P [150, 1800]
+xyw 30 : 20 5 45 -->P [-20, 100] & P [45, 225]
+30 rank= [1, 1, 0, [[-20, 100]]]
+
+XYW forms:
+xyw 34 : 2 24 578 -->P [-2, 48] & P [578, 13872]
+34 rank= [2, 2, 0, [[-16, 120], [-2, 48]]]
+
+XYW forms:
+xyw 45 : 5 20 405 -->P [-5, 100] & P [405, 8100]
+45 rank= [1, 1, 0, [[-36, 162]]]
+
+XYW forms:
+xyw 54 : 18 12 162 -->P [-18, 216] & P [162, 1944]
+xyw 54 : 27 9 108 -->P [-27, 243] & P [108, 972]
+54 rank= [1, 1, 0, [[-27, 243]]]
+
+XYW forms:
+xyw 56 : 7 21 448 -->P [-7, 147] & P [448, 9408]
+56 rank= [1, 1, 0, [[72, 384]]]
+
+XYW forms:
+xyw 60 : 15 15 240 -->P [-15, 225] & P [240, 3600]
+xyw 60 : 36 8 100 -->P [-36, 288] & P [100, 800]
+60 rank= [1, 1, 0, [[-36, 288]]]
+
+XYW forms:
+xyw 65 : 25 12 169 -->P [-25, 300] & P [169, 2028]
+65 rank= [2, 2, 0, [[-25, 300], [-16, 252]]]
+
+XYW forms:
+xyw 70 : 20 15 245 -->P [-20, 300] & P [245, 3675]
+70 rank= [1, 1, 0, [[-20, 300]]]
+
+XYW forms:
+xyw 78 : 3 45 2028 -->P [-3, 135] & P [2028, 91260]
+78 rank= [1, 1, 0, [[-3, 135]]]
+
+XYW forms:
+xyw 80 : 64 6 100 -->P [-64, 384] & P [100, 600]
+80 rank= [1, 1, 0, [[-64, 384]]]
+
+XYW forms:
+xyw 84 : 12 24 588 -->P [-12, 288] & P [588, 14112]
+xyw 84 : 63 7 112 -->P [-63, 441] & P [112, 784]
+84 rank= [1, 1, 0, [[-12, 288]]]
+
+XYW forms:
+xyw 96 : 32 16 288 -->P [-32, 512] & P [288, 4608]
+xyw 96 : 48 12 192 -->P [-48, 576] & P [192, 2304]
+96 rank= [1, 1, 0, [[-48, 576]]]
+
+
+
+PARI/GP Script
+
+\\ C[-n^2,0]
+{
+print("C[-n^2,0]  Form xyw: n^2= (x*w), y^2= (w-x)");
+print("Points: [-x,x*y], [ w,w*y]");
+print;
+
+for(n= 1, 100,
+
+      coef=[-n^2,0];
+      E=ellinit(coef,D=1);if(#E<1,next;);
+
+      nsol=0;
+      fordiv(n^2,x,
+         w= n^2/x;
+         if(w<=x,break);
+         y= w-x;
+         if(!issquare(y),next);
+         
+         y=sqrt(y);y=ceil(y);
+         if(nsol<1,print("XYW forms:"));
+         nsol++;
+         
+         z1=[-x,x*y];
+         isp1= ellisoncurve(E,z1);
+         if(isp1,tx1="P",tx1="Err");
+
+         z2=[w,w*y];
+         isp2= ellisoncurve(E,z2);
+         if(isp2,tx2="P",tx2="Err");
+         
+         od1= ellorder(E,z1);od2= ellorder(E,z1);
+         if(od1!=0,tx1="Err");
+         if(od2!=0,tx2="Err");
+         
+         printsep1(" ","xyw",n,":",x,y,w,"-->");
+         printsep (" ",tx1,z1,"&",tx2,z2);
+         );
+      if(nsol<1,next);
+      
+      eri=ellrankinit(E);
+      h= 100*n;
+      P=ellratpoints(E,h);
+      rv=ellrank(eri,,P);
+      if(#rv!=4,next);
+      if(rv[1]<1,next);
+      r=rv[1];
+      
+      printsep(" ",n,"rank=",rv);print;
+      );
+}
+
+
+
+The form XYW consists of the integers n expressible 
+in the form: n^2 = x*w = x*(x + y^2). 
+All variables being integers.
+
+From a form xyw(x,y,w) various geometric points are obtained.
+In the Curve C[n], the double P(-x,x*y), P(+w, w*y).
+
+Any point in C[n] corresponds to a form XYW. 
+Let it be integer or rational. 
+
+On the elliptic curve C[n] ([-n^2,0]) every point with (x-coord<0) 
+corresponds to a point with (x-coord>0), and vice versa:
+
+P(-a,b) <-> P( (n^2)/a, ((n^2)*b)/(a^2) ).
+P( c,d) <-> P( -(n^2)/c , ((n^2)*d)/(c^2).
+
+These points are related by the group law.
+
+Where n^2 = (x)*(w) is a standard 2-descent:
+      x=a*b^2, w=a*d^2.
+      core(x)==core(w).
+      w= "a*b^2 + y^2 = a*d^2"
+The identical core is related to the rank.
+
+

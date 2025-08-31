@@ -1,0 +1,107 @@
+
+C[-n,0]
+
+SHA records. Assuming BSD Conjecture.
+=====================================================
+
+1 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+3 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+4 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+8 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+9 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+11 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+13 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+16 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+18 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+19 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+24 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+27 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+28 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+29 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+33 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+35 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+40 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+43 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+44 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+48 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+51 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+59 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+61 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+63 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+64 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+67 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+68 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+75 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+81 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+83 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+88 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+91 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+92 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+93 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+98 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+100 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+104 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+107 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+108 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+109 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 1 Square
+113 root: 1 rank: [0, 0, 2, []] a_rank: 0 SHA= 4 Square
+163 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 9 Square
+283 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 9 Square
+419 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 9 Square
+443 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 9 Square
+499 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 9 Square
+523 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 9 Square
+619 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 9 Square
+653 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 9 Square
+659 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 9 Square
+683 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 9 Square
+843 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 9 Square
+1043 root: 1 rank: [0, 2, 0, []] a_rank: 0 SHA= 16 Square
+1483 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 25 Square
+1723 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 25 Square
+2203 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 25 Square
+4363 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 25 Square
+4733 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 25 Square
+5059 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 25 Square
+5723 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 25 Square
+6163 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 49 Square
+6563 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 49 Square
+7283 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 49 Square
+7603 root: 1 rank: [0, 0, 0, []] a_rank: 0 SHA= 49 Square
+=========================================================
+
+\\ PARIGP Script
+
+{
+shamx=0;
+
+for(n= 1,10000,
+
+   E = ellinit([-n,0]);if(#E<1,next);
+   rn= ellrootno(E);if(rn != 1,next);
+   
+   RP=ellratpoints(E,10*n);
+   vr = ellrank(E,,RP);if(#vr!=4,next);
+   
+   er= vr[1];if(er != 0,next);
+   
+   [ar,L] = ellanalyticrank(E); \\ assume BSD
+   if(ar!=0,next);
+   
+   bsd= ellbsd(E);
+   
+\\ for rank 0 curves:
+   sha= L/bsd;
+   
+   sha= round(sha);if(sha<shamx,next);
+   shamx=sha;
+   
+   p1= issquare(sha);
+   p3="None";
+   if(p1,p3="Square");
+   
+   printsep(" ",n,"root:",rn,"rank:",vr,"a_rank:",ar,"SHA=",sha,p3);
+   );
+
+}
+
